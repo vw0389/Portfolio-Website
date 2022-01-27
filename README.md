@@ -1,5 +1,5 @@
 # React Portfolio
-Portfolio, written utilizing react library
+Portfolio, written utilizing the react library
 ## User Story
 AS AN employer looking for candidates with experience building single-page applications
 
@@ -59,3 +59,6 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 ## Links
 
+Live: https://vw0389.github.io/react-portfolio/
+
+Git: https://github.com/vw0389/react-portfolio
