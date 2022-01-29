@@ -59,6 +59,6 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 ## Links
 
-Live: https://vw0389.github.io/react-portfolio/
+Live: https://vweinert.com
 
 Git: https://github.com/vw0389/react-portfolio
