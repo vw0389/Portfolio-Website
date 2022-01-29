@@ -3,7 +3,7 @@ import About from './About';
 import Contact from './Contact';
 import Portfolio from './Portfolio';
 import Resume from './Resume';
-function Body({currentView}) {
+function Body({ currentView }) {
     function selectContent(viewId) {
         switch (viewId) {
             case 1:
@@ -18,8 +18,10 @@ function Body({currentView}) {
                 return <About />;
         }
     }
-    return (<section className="bg-dark text-light p-4 text-center">
-        {selectContent(currentView.id)}
-    </section>);
+    return (
+        <section className="bg-dark text-light p-4 text-center">
+            {selectContent(currentView.id)}
+        </section>
+    );
 }
 export default Body;

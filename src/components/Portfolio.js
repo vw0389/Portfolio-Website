@@ -11,36 +11,42 @@ function Portfolio() {
         {
             id: 1,
             link: "https://github.com/vw0389/work-it-done",
+            deployed: "https://warm-eyrie-07140.herokuapp.com/",
             name: "work-it-done",
             image: image1
         },
         {
             id: 2,
             link: "https://github.com/vw0389/react-portfolio",
+            deployed: "https://vweinert.com",
             name: "React Portfolio",
             image: image2
         },
         {
             id: 3,
             link: "https://github.com/vw0389/what-is-that-song",
+            deployed: "https://vw0389.github.io/what-is-that-song/",
             name: "What Is That Song",
             image: image3
         },
         {
             id: 4,
             link: "https://github.com/vw0389/the-network",
+            deployed: "",
             name: "the-network",
             image: image4
         },
         {
             id: 5,
             link: "https://github.com/vw0389/write-it-down",
+            deployed: "",
             name: "write-it-down",
             image: image5
         },
         {
             id: 6,
             link: "https://github.com/vw0389/Work-Day-Scheduler",
+            deployed: "https://vw0389.github.io/Work-Day-Scheduler/",
             name: "Work-Day-Scheduler",
             image: image6
         }
@@ -52,8 +58,14 @@ function Portfolio() {
             {projects.map(function (project) {
                 return (<div key={project.id} className="p-2 col-md-4">
                     <a href={project.link} target="_blank">
-                        <h4 className="py-3">{project.name}</h4>
+                        <h4 className="py-1">{project.name}</h4>
                     </a>
+                    {project.deployed && (
+                        <a href={project.deployed} target="_blank">
+                            <h4 className="">Deployed</h4>
+                        </a>
+                    )}
+
                     <a href={project.link} target="_blank">
                         <img className="img-fluid" src={project.image} alt="" />
                     </a>
