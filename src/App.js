@@ -1,19 +1,38 @@
 import React, { useState } from 'react';
 import "./App.css";
-import "./components/Header"
+import Header from "./components/Header"
+import Navigation from "./components/Navigation"
+import Body from "./components/Body"
+import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 function App() {
-    const [view] = useState([
-      {name: 'About Me',},{ name: 'Portfolio'},{ name: 'Contact' },{ name: 'Resume' }
+    const [views] = useState([
+        { id: 1, name: 'About Me' }, { id: 2, name: 'Portfolio' }, { id: 3, name: 'Contact' }, { id: 4, name: 'Resume' }
     ]);
-  
-    const [currentCategory, setCurrentCategory] = useState(view[0]);
-  
+
+    const [currentView, setCurrentView] = useState(views[0]);
+
     return (
-        
-      <div className="container text-light">
-          <Header></Header>
-      </div>
+        <div className="">
+            <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+                <div className="container">
+                    <Header></Header>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <Navigation
+                        views={views}
+                        currentView={currentView}
+                        setCurrentView={setCurrentView}
+                    >
+                    </Navigation>
+                </div>
+            </nav>
+            <Body currentView={currentView}></Body>
+            <Footer></Footer>
+        </div>
+
     );
-  }
-  
-  export default App;
+}
+
+export default App;
