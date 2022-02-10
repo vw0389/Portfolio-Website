@@ -40,7 +40,7 @@ function Resume() {
                 })}
             </ul>
 
-            <a href="https://vweinert.com/vw_resume.pdf"><h4>Resume Download</h4></a>
+            <a href="https://vweinert.com/victor_weinert_resume.pdf"><h4>Resume Download</h4></a>
         </div>
     );
 }

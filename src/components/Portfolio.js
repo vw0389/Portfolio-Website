@@ -38,9 +38,9 @@ function Portfolio() {
         },
         {
             id: 5,
-            link: "https://github.com/vw0389/write-it-down",
-            deployed: "",
-            name: "write-it-down",
+            link: "https://github.com/vw0389/still-good",
+            deployed: "https://pacific-bayou-24755.herokuapp.com/",
+            name: "still-good",
             image: image5
         },
         {
