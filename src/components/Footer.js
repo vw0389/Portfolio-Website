@@ -29,15 +29,17 @@ function Footer() {
 
     ]
     return (
-        <div className="container">
-            <div className="row">
-                {contactMethods.map(function (method) {
-                    return (
-                      <div key={method.id}className="col-sm-3 d-flex justify-content-center py-3">
-                          <a href={method.link} target="_blank"><i className={method.fontA}></i></a>
-                      </div>  
-                    );
-                })}
+        <div className='footer'>
+            <div className="container">
+                <div className="row">
+                    {contactMethods.map(function (method) {
+                        return (
+                            <div key={method.id} className="col-sm-3 d-flex justify-content-center py-3">
+                                <a href={method.link} target="_blank" rel="noreferrer"><i className={method.fontA}></i></a>
+                            </div>
+                        );
+                    })}
+                </div>
             </div>
         </div>
     );

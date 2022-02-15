@@ -9,6 +9,7 @@ function Navigation(props) {
                 {
                     views.map(function (view) {
                         return <li key={view.id} className="nav-item">
+                            {/* eslint-disable-next-line */}
                             <a className={"nav-link" + ((currentView.id === view.id) ? " fw-bolder text-decoration-underline": "")}
                              href="#" onClick={() => {
                                  setCurrentView(view);

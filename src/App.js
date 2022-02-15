@@ -4,10 +4,11 @@ import Header from "./components/Header"
 import Navigation from "./components/Navigation"
 import Body from "./components/Body"
 import Footer from "./components/Footer";
-// import Footer from "./components/Footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 function App() {
     const [views] = useState([
-        { id: 1, name: 'About Me' }, { id: 2, name: 'Portfolio' }, { id: 3, name: 'Contact' }, { id: 4, name: 'Resume' }
+        { id: 1, name: 'About Me' }, { id: 2, name: 'Portfolio' }, { id: 3, name: 'Resume' }
     ]);
 
     const [currentView, setCurrentView] = useState(views[0]);

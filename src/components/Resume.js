@@ -27,7 +27,7 @@ function Resume() {
             <ul>
                 {languages.map(function (language) {
                     return (
-                        <li>{language}</li>
+                        <li key={language}>{language}</li>
                     )
                 })}
             </ul>
@@ -35,7 +35,7 @@ function Resume() {
             <ul>
             {experienceWith.map(function (experience) {
                     return (
-                        <li>{experience}</li>
+                        <li key={experience}>{experience}</li>
                     )
                 })}
             </ul>

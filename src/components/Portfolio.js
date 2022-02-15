@@ -54,19 +54,19 @@ function Portfolio() {
     ];
 
     return (<div className="container">
-        <div class="row">
+        <div className="row">
             {projects.map(function (project) {
                 return (<div key={project.id} className="p-2 col-md-4">
-                    <a href={project.link} target="_blank">
+                    <a href={project.link} target="_blank" rel="noreferrer">
                         <h4 className="py-1">{project.name}</h4>
                     </a>
                     {project.deployed && (
-                        <a href={project.deployed} target="_blank">
-                            <h4 className="">Deployed</h4>
+                        <a href={project.deployed} target="_blank" rel="noreferrer">
+                            <h4 className="">Live</h4>
                         </a>
                     )}
 
-                    <a href={project.link} target="_blank">
+                    <a href={project.link} target="_blank" rel="noreferrer">
                         <img className="img-fluid" src={project.image} alt="" />
                     </a>
                 </div>)
