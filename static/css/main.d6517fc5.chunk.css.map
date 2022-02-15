@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,EACI,+BAAiC,CACjC,gBACJ,CACA,IACI,UACJ,CACA,gBACI,UACJ,CACA,UACI,UACJ","file":"main.d6517fc5.chunk.css","sourcesContent":["* {\n    font-family: 'Roboto', sans-serif;\n    font-size: 1.1rem;\n}\ni,a {\n    color:white;\n}\ni:hover,a:hover {\n    color:grey\n}\nimg:hover {\n    opacity: .7;\n}\n"]}
